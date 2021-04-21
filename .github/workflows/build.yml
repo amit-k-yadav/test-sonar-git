@@ -1,5 +1,10 @@
 name: Build
 on:
+  push:
+    branches:
+      - master # or the name of your main branch
+      - develope
+      - feature
   pull_request:
     types: [opened, synchronize, reopened]
 jobs:
